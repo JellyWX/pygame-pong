@@ -48,7 +48,7 @@ def mainLoop():
     paddle_2.draw()
 
     gui.Text(str(ball.score),36)
-    gui.showText(gui.width - gui.f.get_width(),0)
+    gui.showText(gui.width/2 - gui.f.get_width()/2,0)
 
     gui.flip(40)
 
