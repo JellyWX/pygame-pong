@@ -27,17 +27,17 @@ class Ball(object):
       self.x = self.gui.width/2
       self.y = self.gui.height/2
 
-      self.vel_x = randint(6,12)
-      self.vel_y = (self.vel_x**2 - 25)**(0.5)
+      self.vel_x = 10
+      self.vel_y = randint(1,15)
 
     elif self.x > self.gui.width:
       self.score['Player1'] += 1
       self.x = self.gui.width/2
       self.y = self.gui.height/2
 
-      self.vel_x = randint(6,12)
+      self.vel_x = 10
       self.vel_x *= -1
-      self.vel_y = (self.vel_x**2 - 25)**(0.5)
+      self.vel_y = randint(1,15)
 
     self.gui.Color('ffffff')
     self.x += self.vel_x
