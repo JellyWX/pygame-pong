@@ -17,8 +17,8 @@ def mainLoop():
   paddle_1 = Paddle(20, gui.height*0.4,gui)
   paddle_2 = Paddle(gui.width - 40, gui.height*0.4,gui)
 
-  r = randint(6,12)
-  r2 = (r**2 - 25)**(0.5)
+  r = 10
+  r2 = randint(1,15)
 
   ball = Ball(gui.width/2,gui.height/2,r,r2,paddle_1,paddle_2,gui)
 
